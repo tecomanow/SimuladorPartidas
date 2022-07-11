@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="4dp"
+        android:layout_margin="8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgHomeTeam"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tvHomeTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Team"
+                app:layout_constraintEnd_toEndOf="@+id/imgHomeTeam"
+                app:layout_constraintStart_toStartOf="@+id/imgHomeTeam"
+                app:layout_constraintTop_toBottomOf="@+id/imgHomeTeam"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvHomeTeamScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="@+id/imgHomeTeam"
+                app:layout_constraintStart_toEndOf="@+id/imgHomeTeam"
+                app:layout_constraintTop_toTopOf="@+id/imgHomeTeam" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgAwayTeam"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tvAwayTeamScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="@+id/imgAwayTeam"
+                app:layout_constraintEnd_toStartOf="@+id/imgAwayTeam"
+                app:layout_constraintTop_toTopOf="@+id/imgAwayTeam" />
+
+            <TextView
+                android:id="@+id/tvAwayTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Away Team"
+                app:layout_constraintEnd_toEndOf="@+id/imgAwayTeam"
+                app:layout_constraintStart_toStartOf="@+id/imgAwayTeam"
+                app:layout_constraintTop_toBottomOf="@+id/imgAwayTeam"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                app:layout_constraintBottom_toBottomOf="@+id/imgAwayTeam"
+                app:layout_constraintEnd_toStartOf="@+id/tvAwayTeamScore"
+                app:layout_constraintStart_toEndOf="@+id/tvHomeTeamScore"
+                app:layout_constraintTop_toTopOf="@+id/imgAwayTeam" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
